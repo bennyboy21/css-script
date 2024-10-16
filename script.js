@@ -44,6 +44,7 @@ function openEpisode(episodeNum) {
         }
         setTimeout(function() {
             videoContainer.style.transition = "0s"
+            playVideo()
         }, 500)
     }, 2000)
 }
