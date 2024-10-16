@@ -27,7 +27,7 @@ function openEpisode(episodeNum) {
         episodeElement.style.transition = ".25s"
         episodeElement.style.opacity = "1"
     }, 500)
-    video.setAttribute("src", "Episodes/E" + episodeNum + ".mp4")
+    video.setAttribute("src", "https://firebasestorage.googleapis.com/v0/b/afaithfulthreads.appspot.com/o/E" + episodeNum + ".mp4?alt=media&token=6669bef3-a9c6-4452-92b4-12d9ddac89b6")
     episodeTitle.textContent = '"' + episodeNames[episodeNum - 1] + '"'
     episodeDescription.textContent = episodeDescriptions[episodeNum - 1]
     episodeNumElement.textContent = 'S1 E' + episodeNum
