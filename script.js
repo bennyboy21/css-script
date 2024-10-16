@@ -13,10 +13,10 @@ var episodeDescriptions = [`Dexter is living a quiet life in the small town of I
 
 console.log(episodeDescriptions[2])
 var currentTimesServer = localStorage.getItem("currentTimes")
-currentTimesServer = currentTimesServer.split(",")
-console.log(currentTimesServer)
 if(currentTimesServer != null) {
+    currentTimesServer = currentTimesServer.split(",")
     currentTimesLocal = currentTimesServer
+    console.log(currentTimesServer)
 }
 
 function openEpisode(episodeNum) {
