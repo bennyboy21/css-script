@@ -1,0 +1,1054 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+* {
+    font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+    background:rgb(10, 10, 10);
+    width:100vw;
+    overflow-x: hidden;
+}
+
+:root {
+    --control-Colors:rgb(160, 33, 33);
+    --white-Color:white;
+}
+
+@media (min-width:1000px) {
+    #page-Container {
+        width:calc(100vw - 50px);
+        height:fit-content;
+        position:absolute;
+        left:50%;
+        transform:translate(-50%);
+        max-width: 1500px;
+    }
+
+    #poster-Image {
+        display:none;
+    }
+
+    #poster-Image-Container {
+        width:100%;
+        max-height: 700px;
+        overflow:hidden;
+    }
+
+    #desktop-Poster-Image {
+        width:100%;
+    }
+
+    #desktop-Poster-Text {
+        width:500px;
+        position:absolute;
+        bottom:0px;
+        z-index: 1;
+        left:25px;
+        opacity: 0.8;
+    }
+
+    #fade-1 {
+        width:100%;
+        height:500px;
+        background:linear-gradient(to top, rgb(10, 10, 10), transparent);
+        position:absolute;
+        bottom:0px;
+    }
+
+    #fade-2 {
+        width:400px;
+        height:100%;
+        background:linear-gradient(to right, rgb(10, 10, 10), transparent);
+        position:absolute;
+        top:0px;
+        left:0px;
+    }
+
+    #fade-3 {
+        width:400px;
+        height:100%;
+        background:linear-gradient(to left, rgb(10, 10, 10), transparent);
+        position:absolute;
+        top:0px;
+        right:0px;
+    }
+
+    #fade-4 {
+        width:100vw;
+        height:200px;
+        background:linear-gradient(to bottom, rgb(10, 10, 10), transparent);
+        position:fixed;
+        top:0px;
+        left:0px;
+        z-index: 1;
+    }
+}
+
+@media (max-width:1000px) {
+    @media (min-width:700px) {
+        #page-Container {
+            width:calc(100vw - 50px);
+            height:fit-content;
+            position:absolute;
+            left:50%;
+            transform:translate(-50%);
+            max-width: 1500px;
+        }
+
+        #poster-Image {
+            display:none;
+        }
+
+        #poster-Image-Container {
+            width:100%;
+            height:500px;
+            overflow:hidden;
+        }
+
+        #desktop-Poster-Image {
+            width:100%;
+        }
+
+        #desktop-Poster-Text {
+            width:300px;
+            position:absolute;
+            bottom:0px;
+            z-index: 1;
+            left:25px;
+            opacity: 0.8;
+        }
+
+        #fade-1 {
+            width:100%;
+            height:500px;
+            background:linear-gradient(to top, rgb(10, 10, 10), transparent);
+            position:absolute;
+            bottom:0px;
+        }
+
+        #fade-2 {
+            width:400px;
+            height:100%;
+            background:linear-gradient(to right, rgb(10, 10, 10), transparent);
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+
+        #fade-3 {
+            width:400px;
+            height:100%;
+            background:linear-gradient(to left, rgb(10, 10, 10), transparent);
+            position:absolute;
+            top:0px;
+            right:0px;
+        }
+
+        #fade-4 {
+            width:100vw;
+            height:200px;
+            background:linear-gradient(to bottom, rgb(10, 10, 10), transparent);
+            position:fixed;
+            top:0px;
+            left:0px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    #page-Container {
+        width:calc(100vw - 50px);
+        height:fit-content;
+        position:absolute;
+        left:50%;
+        transform:translate(-50%);
+        max-width: 1500px;
+    }
+
+    #poster-Image {
+        width:100%
+    }
+
+    #poster-Image-Container {
+        width:100%;
+        height:400px;
+        overflow:hidden;
+    }
+
+    #desktop-Poster-Image {
+        display:none;
+    }
+
+    #desktop-Poster-Text {
+        width:210px;
+        position:absolute;
+        bottom:-28px;
+        z-index: 1;
+        left:50%;
+        transform:translate(-50%);
+        opacity: 0.86;
+    }
+
+    #fade-1 {
+        width:100%;
+        height:500px;
+        background:linear-gradient(to top, rgb(10, 10, 10), transparent);
+        position:absolute;
+        bottom:0px;
+    }
+
+    #fade-2 {
+        width:100px;
+        height:100%;
+        background:linear-gradient(to right, rgb(10, 10, 10), transparent);
+        position:absolute;
+        top:0px;
+        left:0px;
+    }
+
+    #fade-3 {
+        width:100px;
+        height:100%;
+        background:linear-gradient(to left, rgb(10, 10, 10), transparent);
+        position:absolute;
+        top:0px;
+        right:0px;
+    }
+
+    #fade-4 {
+        width:100vw;
+        height:100px;
+        background:linear-gradient(to bottom, rgb(10, 10, 10), transparent);
+        position:fixed;
+        top:0px;
+        left:0px;
+        z-index: 1;
+    }
+}
+
+@media (max-width:1000px) {
+    #episodes-Container {
+        width:calc(100vw - 50px);
+        max-width: 1200px;
+        position:absolute;
+        top:450px;
+        left:50%;
+        transform:translate(-50%);
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom:50px;
+    }
+
+    #breaker {
+        height:50px;
+    }
+
+    .episode-Container {
+        width:100%;
+        height:400px;
+        overflow:hidden;
+        background:rgb(15, 15, 15);
+        border-radius: 15px;
+        cursor: pointer;
+        position:relative;
+    }
+
+    .episode-Img-Container {
+        max-width: 350px;
+        height:200px;
+        overflow:hidden;
+        border-radius: 15px;
+    }
+
+    .episode-Img {
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .episode-Name-Length-Description-Container {
+        width:calc(100% - 50px);
+        height:fit-content;
+        position: absolute;
+        left:25px;
+        top:220px;
+    }
+
+    .episode-Name {
+        font-size: 35px;
+        font-weight: 800;
+        color:white;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1; /* Limits to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    .episode-Description {
+        font-size: 18px;
+        color:rgb(150, 150, 150);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* Limits to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    .episode-Length {
+        color:white;
+        font-weight: 800;
+        position:absolute;
+        bottom:25px; 
+        right:25px;
+    }
+}
+
+@media (min-width:1000px) {
+    #episodes-Container {
+        width:calc(100vw - 50px);
+        max-width: 1200px;
+        position:absolute;
+        top:825px;
+        left:50%;
+        transform:translate(-50%);
+        display:flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #breaker {
+        height:50px;
+    }
+
+    .episode-Container {
+        width:100%;
+        height:200px;
+        overflow:hidden;
+        background:rgb(15, 15, 15);
+        border-radius: 15px;
+        cursor: pointer;
+        position:relative;
+    }
+
+    .episode-Img-Container {
+        max-width: 350px;
+        height:200px;
+        overflow:hidden;
+        border-radius: 15px;
+    }
+
+    .episode-Img {
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .episode-Name-Length-Description-Container {
+        width:calc(100% - 400px);
+        position: absolute;
+        right:25px;
+        top:25px;
+    }
+
+    .episode-Name {
+        font-size: 35px;
+        font-weight: 800;
+        color:white;
+    }
+
+    .episode-Description {
+        font-size: 18px;
+        color:rgb(150, 150, 150);
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* Limits to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+
+    .episode-Length {
+        color:white;
+        font-weight: 800;
+        position:absolute;
+        bottom:25px; 
+        right:25px;
+    }
+}
+
+@media (max-width:1000px) {
+    #current-Episode-Container {
+        position:fixed;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        width:100vw;
+        height:auto;
+        background:rgba(0, 0, 0, 0.2);
+        backdrop-filter:blur(.25rem);
+        display:none;
+        opacity: 0;
+        z-index: 1000;
+    }
+    
+    #player {
+        width:100vw;
+        max-width: 750px;
+        height:auto;
+        max-height: 800px;
+        background:black;
+        position:fixed;
+        top:0px;
+        left:0px;
+        bottom:0px;
+        overflow-y: scroll;
+    }
+    
+    #video-Container {
+        width:100%;
+        height:fit-content;
+        margin-top: 65px;
+        position:relative;
+        margin-bottom: 25px;
+        cursor: pointer;
+        opacity:0;
+    }
+    
+    #video {
+        width:100%;
+    }
+    
+    #close {
+        width:40px;
+        height:40px;
+        position:absolute;
+        right:15px;
+        top:15px;
+        border: none;
+        background:rgb(15, 15, 15);
+        border-radius: 100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        cursor: pointer;
+    }
+    
+    #all-Controls {
+        width:100%;
+        position:absolute;
+        bottom:0px;
+        height:50px;
+        transition: .25s;
+        background:none;
+    }
+    
+    
+    .time-controls {
+        width:100%;
+        height:2px;
+        position:absolute;
+        top:15px;
+        transition: .25s;
+    }
+
+    #time-range::-webkit-slider-thumb:hover {
+        opacity: 1;
+        transition: .25s;
+        width:10px;
+        height:10px;
+        background: #9f0000; /* Color of the thumb */
+    }
+    
+    #time-range::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Removes default thumb styling */
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        background: #ff0000; /* Color of the thumb */
+        cursor: pointer;
+    }
+    
+    #main-Controls {
+        height:0px;
+        overflow: hidden;
+        transition: .25s;
+    }
+    
+    .time-controls {
+        width:100%;
+        height:2px;
+        position:absolute;
+        top:0px;
+        transition: .25s;
+    }
+    
+    #play-Button-Container {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        left:15px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+    }
+    
+    #play-Icon {
+        width:100%;
+        height:100%;
+    }
+    
+    #pause-Icon {
+        width:100%;
+        height:100%;
+        display:none;
+        scale: .85;
+    }
+    
+    #volume-Button-Container {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        left:55px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+        overflow:hidden;
+    }
+    
+    #volume-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+    }
+    
+    #mute-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+        display:none;
+    }
+    
+    #full-Screen-Button-Container {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        right:15px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+        overflow:hidden;
+    }
+    
+    #fullscreen-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+    }
+    
+    #minimize-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+        display:none;
+    }
+    
+    #video-Current-Time-Container {
+        color:white;
+        position:absolute;
+        top:50%;
+        left:140px;
+        transform:translate(0, -50%);
+    }
+    
+    #next-Episode-Button {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        left:95px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+        overflow:hidden;
+    }
+    
+    #next-Episode-Icon {
+        width:100%;
+        height:100%;
+        scale: .98;
+    }
+    
+    #time-range {
+        width:calc(100% + 3px);
+        height:2px;
+        position:absolute;
+        left:-2.5px;
+        -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+        background: linear-gradient(to right, #ff0000 0%, #ff0000 0%, #ddd 0%, #ddd 100%);
+    }
+    
+    input, button:focus {
+        outline:none;              
+    }
+    
+    #title {
+        width:calc(100% - 50px);
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 45px;
+        margin-bottom:6px;
+        font-weight: 800;
+        color:white;
+    }
+    
+    #video-Duration-Container {
+        width:calc(100% - 50px);
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display:flex;
+        gap: 5px;
+    }
+    
+    #video-Duration {
+        width:fit-content;
+        padding:5px 10px;
+        background:rgb(15, 15, 15);
+        font-weight: 800;
+        color:white;
+        border-radius: 5px;
+    }
+    
+    #episode-Num {
+        width:fit-content;
+        padding:5px 10px;
+        background:rgb(15, 15, 15);
+        font-weight: 800;
+        color:white;
+        border-radius: 5px;
+    }
+    
+    #discription {
+        width:calc(100% - 50px);
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        font-weight: 400;
+        color:rgb(170, 170, 170);
+    }
+    
+    .time-Left-In-Episode {
+        height:3px;
+        width:150px;
+        position:absolute;
+        bottom:31px;
+        right:115px;
+        -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+        border-radius: 100px;
+    }
+    
+    .time-Left-In-Episode::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Removes default thumb styling */
+        width:0px;
+        height:0px;
+        border-radius: 50%;
+        background: #ff0000; /* Color of the thumb */
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1000px) {
+    #current-Episode-Container {
+        position:fixed;
+        top:0px;
+        bottom:0px;
+        left:0px;
+        width:100vw;
+        height:auto;
+        background:rgba(0, 0, 0, 0.2);
+        backdrop-filter:blur(.25rem);
+        display:none;
+        opacity: 0;
+        z-index: 1000;
+    }
+    
+    #player {
+        width:100vw;
+        max-width: 750px;
+        height:calc(100vh - 50px);
+        max-height: 800px;
+        background:black;
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        border-radius: 15px;
+        overflow-y: scroll;
+    }
+    
+    #video-Container {
+        width:100%;
+        height:fit-content;
+        margin-top: 65px;
+        position:relative;
+        margin-bottom: 25px;
+        cursor: pointer;
+        opacity:0;
+    }
+    
+    #video {
+        width:100%;
+    }
+    
+    #close {
+        width:40px;
+        height:40px;
+        position:absolute;
+        right:15px;
+        top:15px;
+        border: none;
+        background:rgb(15, 15, 15);
+        border-radius: 100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    
+    #all-Controls {
+        width:100%;
+        position:absolute;
+        bottom:0px;
+        height:2px;
+        transition: .25s;
+    }
+    
+    #video-Container:hover > #all-Controls {
+        width:100%;
+        position:absolute;
+        bottom:0px;
+        height:50px;
+        transition: .25s;
+        background:none;
+    }
+    
+    
+    
+    /* #all-Controls {
+        width:100%;
+        position:absolute;
+        bottom:0px;
+        height:50px;
+        transition: .25s;
+        background:red;
+    } */
+    
+    
+    
+    
+    
+    
+      
+    #video-Container:hover > #all-Controls > .time-controls {
+        width:100%;
+        height:2px;
+        position:absolute;
+        top:0px;
+        transition: .25s;
+    }
+    
+    
+    
+    /* .time-controls {
+        width:100%;
+        height:2px;
+        position:absolute;
+        top:15px;
+        transition: .25s;
+    } */
+    
+    
+    
+    
+    
+    #video-Container:hover > #all-Controls > .time-controls > #time-range::-webkit-slider-thumb {
+        opacity: 1;
+        transition: .25s;
+        width:10px;
+        height:10px;
+    }
+    
+    #time-range::-webkit-slider-thumb:hover {
+        opacity: 1;
+        transition: .25s;
+        width:10px;
+        height:10px;
+        background: #9f0000; /* Color of the thumb */
+    }
+    
+    #time-range::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Removes default thumb styling */
+        width:4px;
+        height:4px;
+        border-radius: 50%;
+        background: #ff0000; /* Color of the thumb */
+        cursor: pointer;
+    }
+    
+    #main-Controls {
+        height:0px;
+        overflow: hidden;
+        opacity:0;
+        transition: .25s;
+    }
+    
+    #video-Container:hover > #all-Controls > #main-Controls {
+        height:50px;
+        overflow: hidden;
+        opacity: 1;
+        transition: .25s;
+    }
+    
+    .time-controls {
+        width:100%;
+        height:2px;
+        position:absolute;
+        top:0px;
+        transition: .25s;
+    }
+    
+    #play-Button-Container {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        left:15px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+    }
+    
+    #play-Icon {
+        width:100%;
+        height:100%;
+    }
+    
+    #pause-Icon {
+        width:100%;
+        height:100%;
+        display:none;
+        scale: .85;
+    }
+    
+    #volume-Button-Container {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        left:55px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+        overflow:hidden;
+    }
+    
+    #volume-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+    }
+    
+    #mute-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+        display:none;
+    }
+    
+    #full-Screen-Button-Container {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        right:15px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+        overflow:hidden;
+    }
+    
+    #fullscreen-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+    }
+    
+    #minimize-Icon {
+        width:100%;
+        height:100%;
+        scale: .8;
+        display:none;
+    }
+    
+    #video-Current-Time-Container {
+        color:white;
+        position:absolute;
+        top:50%;
+        left:140px;
+        transform:translate(0, -50%);
+    }
+    
+    #next-Episode-Button {
+        width:30px;
+        height:30px;
+        border: none;
+        background:none;
+        position:absolute;
+        top:50%;
+        left:95px;
+        transform:translate(0, -50%);
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        cursor: pointer;
+        overflow:hidden;
+    }
+    
+    #next-Episode-Icon {
+        width:100%;
+        height:100%;
+        scale: .98;
+    }
+    
+    #time-range {
+        width:calc(100% + 3px);
+        height:2px;
+        position:absolute;
+        left:-2.5px;
+        -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+        background: linear-gradient(to right, #ff0000 0%, #ff0000 0%, #ddd 0%, #ddd 100%);
+    }
+    
+    .controls {
+        display:none;
+    }
+    
+    input, button:focus {
+        outline:none;              
+    }
+    
+    #title {
+        width:calc(100% - 50px);
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 45px;
+        margin-bottom:6px;
+        font-weight: 800;
+        color:white;
+    }
+    
+    #video-Duration-Container {
+        width:calc(100% - 50px);
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display:flex;
+        gap: 5px;
+    }
+    
+    #video-Duration {
+        width:fit-content;
+        padding:5px 10px;
+        background:rgb(15, 15, 15);
+        font-weight: 800;
+        color:white;
+        border-radius: 5px;
+    }
+    
+    #episode-Num {
+        width:fit-content;
+        padding:5px 10px;
+        background:rgb(15, 15, 15);
+        font-weight: 800;
+        color:white;
+        border-radius: 5px;
+    }
+    
+    #discription {
+        width:calc(100% - 50px);
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        font-weight: 400;
+        color:rgb(170, 170, 170);
+    }
+    
+    .time-Left-In-Episode {
+        height:3px;
+        width:150px;
+        position:absolute;
+        bottom:31px;
+        right:115px;
+        -webkit-appearance: none; /* Removes default styling in WebKit browsers */
+        border-radius: 100px;
+    }
+    
+    .time-Left-In-Episode::-webkit-slider-thumb {
+        -webkit-appearance: none; /* Removes default thumb styling */
+        width:0px;
+        height:0px;
+        border-radius: 50%;
+        background: #ff0000; /* Color of the thumb */
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width:0px;
+}
