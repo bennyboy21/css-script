@@ -17,6 +17,8 @@ if(currentTimesServer != null) {
     currentTimesServer = currentTimesServer.split(",")
     currentTimesLocal = currentTimesServer
     console.log(currentTimesServer)
+} else {
+    currentTimesServer = currentTimesLocal
 }
 
 function openEpisode(episodeNum) {
